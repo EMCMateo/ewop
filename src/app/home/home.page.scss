@@ -75,6 +75,7 @@ ion-fab-button {
   padding: 20px;
   text-align: center;
   transition: transform 0.2s;
+  margin-left: 10px;
 }
 
 .tournament-card:hover {
@@ -96,20 +97,9 @@ ion-fab-button {
   left: 23.7rem;
   top: 0.5rem;
 }
-
-.uetslog {
-  position: absolute;
-  left: 35%;
-  top: 14rem;
-  width: 8rem;
-  height: 8rem; 
-  background-color: #afafaf ; 
-  border-radius:5rem; 
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-  line-height: 100px; 
-  margin-top: 2.7rem;
+.iiimg{
+  height: 15rem;
+  width: 15rem;
 }
 
 .first{
