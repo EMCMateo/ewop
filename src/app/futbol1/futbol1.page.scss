@@ -16,6 +16,11 @@ width: 3rem;
     flex-wrap: wrap; 
       }
 
+      .clssd{
+        font-family: Arial, Helvetica, sans-serif;
+        font: 5px;
+        text-align: start;
+      }
   .team {
     font-size: 1rem;
     display: flex;
@@ -39,8 +44,9 @@ font-size: 0.8rem;
     background-color: #f2f2f2;
 }
 
+
 .data-cell {
-    text-align: center;
+    text-align: start;
 }
 
 .ion-content {

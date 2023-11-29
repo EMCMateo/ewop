@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Futbol1Page implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() { 
+    
   }
 
-}
+  ngOnInit() {
+    
+  }
+  public ocultar1: boolean = false;
+  accion1(){
+  this.ocultar1 = !this.ocultar1;
+}}

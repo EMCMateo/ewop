@@ -58,8 +58,8 @@
     </ion-item>
   </ion-card>
 
-  
-  <ion-grid>
+  <ion-card>
+  <ion-grid class="clssd">
     <ion-row class="header-row">
         <ion-col class="header-cell">Pos</ion-col>
         <ion-col class="header-cell"> Equipo</ion-col>
@@ -71,7 +71,7 @@
 
     <ion-row class="data-row">
         <ion-col class="data-cell">1</ion-col>
-        <ion-col class="data-cell"><p>Tecnico Salesiano</p></ion-col>
+        <ion-col class="data-cell">Tecnico Salesiano</ion-col>
         <ion-col class="data-cell">6</ion-col>
         <ion-col class="data-cell">2</ion-col>
         <ion-col class="data-cell">+4</ion-col>
@@ -100,8 +100,46 @@
     <ion-col class="data-cell">2</ion-col>
     <ion-col class="data-cell">+8</ion-col>
 </ion-row>
-
 </ion-grid>
-<ion-button expand="block" fill="clear" shape="round">Ver más</ion-button>
+</ion-card>
+<ion-card *ngIf="ocultar1">
+  <ion-grid class="clssd">
+  <ion-row class="data-row">
+    <ion-col class="data-cell">5</ion-col>
+    <ion-col class="data-cell">Cesar Davila</ion-col>
+    <ion-col class="data-cell">3</ion-col>
+    <ion-col class="data-cell">2</ion-col>
+    <ion-col class="data-cell">+4</ion-col>
+</ion-row>
+
+<ion-row class="data-row">
+    <ion-col class="data-cell">6</ion-col>
+    <ion-col class="data-cell">CEDFI</ion-col>
+    <ion-col class="data-cell">3</ion-col>
+    <ion-col class="data-cell">2</ion-col>
+    <ion-col class="data-cell">+1</ion-col>
+</ion-row>
+
+<ion-row class="data-row">
+  <ion-col class="data-cell">7</ion-col>
+  <ion-col class="data-cell">Borja</ion-col>
+  <ion-col class="data-cell">1</ion-col>
+  <ion-col class="data-cell">2</ion-col>
+  <ion-col class="data-cell">-1</ion-col>
+</ion-row>
+
+<ion-row class="data-row">
+<ion-col class="data-cell">8</ion-col>
+<ion-col class="data-cell">Sudamericano</ion-col>
+<ion-col class="data-cell">0</ion-col>
+<ion-col class="data-cell">2</ion-col>
+<ion-col class="data-cell">-8</ion-col>
+</ion-row>
+</ion-grid>
+</ion-card>
+
+<ion-button expand="block" fill="clear" shape="round" (click)="accion1()" >Ver más</ion-button>
+
+
 </ion-content>
 
