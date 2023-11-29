@@ -1,0 +1,103 @@
+
+<ion-toolbar>
+  <ion-buttons>
+    
+    <ion-menu-button slot="start" menu="main_menu">
+      <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+    </ion-menu-button>
+    <ion-button id="open-toast" slot="start">
+      <ion-icon slot="icon-only" name="person-circle" >
+        <ion-toast trigger="open-toast" message="Necesitas iniciar sesion! " duration="5000"></ion-toast>
+
+      </ion-icon>
+    </ion-button>
+    <ion-title class="ass">Principal</ion-title>
+
+  
+
+</ion-buttons>
+</ion-toolbar>
+  
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-fab slot="fixed" vertical="bottom" size="small" horizontal="end" >
+    <ion-fab-button>
+      <ion-icon name="chevron-up-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button href="https://www.facebook.com/Mateo.10.Molina">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button href="https://www.instagram.com/mateo_molina_/"> 
+        <ion-icon name="logo-instagram" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  <swiper-container class="cards"  (slidechange)="swiperSlideChanged($event)"
+  [loop]="true"
+  [pagination]="true">
+
+    <swiper-slide><button class="btn" [routerLink]="['/futbol1']" >
+      <div class="tournament-card">
+        <img
+        src="../../assets/imgs/football_icon-icons.com_67229.png"
+          alt="Fútbol">
+          
+        <h2>Proximo partido</h2>
+        <div class="team"> <ion-img class="download-icon" src="../../assets/imgs/UETS.png" alt="Descargar" /> UETS
+          vs UEP Borja <ion-img class="download-icon" src="../../assets/imgs/BORJA.png" alt="Descargar" /></div>
+      </div>
+    </button></swiper-slide>
+    <swiper-slide> <button class="btn">
+      <div class="tournament-card">
+        <img src="../../assets/imgs/basketball_icon-icons.com_67241.png" alt="Baloncesto">
+        <h2>Proximo Partido</h2>
+        <div class="team"> <ion-img class="download-icon" src="../../assets/imgs/UETS.png" alt="Descargar" /> UETS
+          vs UEM FFC <ion-img class="download-icon" src="../../assets/imgs/FEBRES.jpg" alt="Descargar" /></div>
+      </div>
+    </button></swiper-slide>
+    <swiper-slide><button class="btn">
+      <div class="tournament-card">
+        <img src="../../assets/imgs/volleyball_icon-icons.com_67205.png" alt="Voleibol">
+        <h2>Proximo Partido</h2>
+        <div class="team"> <ion-img class="download-icon" src="../../assets/imgs/UETS.png" alt="Descargar" /> UETS
+          vs La Salle <ion-img class="download-icon" src="../../assets/imgs/SALLE.png" alt="Descargar" /></div>
+      </div>
+    </button></swiper-slide>
+
+  </swiper-container>
+
+  
+
+
+  <script>
+    const toast = document.querySelector('ion-toast');
+  
+    toast.buttons = [
+      {
+        text: 'More Info',
+        role: 'info',
+        handler: () => {
+          console.log('More Info clicked');
+        },
+      },
+      {
+        text: 'Dismiss',
+        role: 'cancel',
+        handler: () => {
+          console.log('Dismiss clicked');
+        },
+      },
+    ];
+  
+    toast.addEventListener('ionToastDidDismiss', (ev) => {
+      const { role } = ev.detail;
+      console.log(`Dismissed with role: ${role}`);
+    });
+
+
+  </script> 
+
+</ion-content>

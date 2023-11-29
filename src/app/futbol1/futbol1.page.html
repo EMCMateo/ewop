@@ -1,0 +1,107 @@
+<ion-toolbar>
+  <ion-buttons>
+    <ion-button slot="start" [routerLink]="['/home']">
+      <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+    </ion-button>
+    <ion-menu-button slot="start" menu="main_menu">
+      <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+    </ion-menu-button>
+
+    <ion-title>Fútbol</ion-title>
+  </ion-buttons>
+
+</ion-toolbar>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <ion-card class="icar">
+    
+        <ion-card-header>
+          <ion-card-title>Proximo Partido:</ion-card-title>
+          <ion-card-subtitle>25/12/2058     15:00pm  </ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <div class="team"> 
+            <img class="download-icon" src="../../assets/imgs/UETS.png" alt="Descargar" />
+            <ion-label>Técnico Salesiano</ion-label>
+            <ion-label> - </ion-label>
+            <ion-label>UEP Borja</ion-label>
+            <img class="download-icon" src="../../assets/imgs/BORJA.png" alt="Descargar" /></div>
+
+        </ion-card-content>
+      </ion-card>
+
+  <ion-card>
+    <ion-card-header>Ultimos resultados:</ion-card-header>
+    <ion-item class="its">
+      
+      <ion-img class="download-icon" src="../../assets/imgs/BORJA.png"></ion-img>
+      <p class="ps">Benigno Malo</p>
+      <p class="ps">ㅤㅤ0 - 0ㅤㅤㅤ</p>
+      <p class="ps" >CD Alemán</p>
+      <ion-img slot="end" class="download-icon2" src="../../assets/imgs/ALEMAN.png"></ion-img>
+    </ion-item>
+    <ion-item class="its">
+      <ion-img class="download-icon" src="../../assets/imgs/sANTANA.jpg"></ion-img>
+      <p class="ps">Santana</p>
+      <p class="ps" >ㅤㅤㅤ2 - 0ㅤㅤㅤ</p>
+      <p class="ps">CEDFI</p>
+      <ion-img slot="end" class="download-icon2" src="../../assets/imgs/CEDFI.png"></ion-img>
+    </ion-item>
+      
+    <ion-item class="its">
+      <ion-img class="download-icon" src="../../assets/imgs/Dan cor.jpg"></ion-img>
+      <p class="ps">UE Daniel Cordoba</p>
+      <p class="ps" >ㅤㅤ0 - 5ㅤㅤㅤ</p>
+      <p class="ps">Tecnico Salesiano</p>
+      <ion-img slot="end" class="download-icon2" src="../../assets/imgs/UETS.png"></ion-img>
+    </ion-item>
+  </ion-card>
+
+  
+  <ion-grid>
+    <ion-row class="header-row">
+        <ion-col class="header-cell">Pos</ion-col>
+        <ion-col class="header-cell"> Equipo</ion-col>
+        <ion-col class="header-cell">Pts</ion-col>
+        <ion-col class="header-cell">PJ</ion-col>
+        <ion-col class="header-cell">GD</ion-col>
+       
+    </ion-row>
+
+    <ion-row class="data-row">
+        <ion-col class="data-cell">1</ion-col>
+        <ion-col class="data-cell"><p>Tecnico Salesiano</p></ion-col>
+        <ion-col class="data-cell">6</ion-col>
+        <ion-col class="data-cell">2</ion-col>
+        <ion-col class="data-cell">+4</ion-col>
+    </ion-row>
+
+    <ion-row class="data-row">
+        <ion-col class="data-cell">2</ion-col>
+        <ion-col class="data-cell">Benigno Malo</ion-col>
+        <ion-col class="data-cell">4</ion-col>
+        <ion-col class="data-cell">2</ion-col>
+        <ion-col class="data-cell">+2</ion-col>
+    </ion-row>
+
+    <ion-row class="data-row">
+      <ion-col class="data-cell">3</ion-col>
+      <ion-col class="data-cell">Daniel Cordoba</ion-col>
+      <ion-col class="data-cell">4</ion-col>
+      <ion-col class="data-cell">2</ion-col>
+      <ion-col class="data-cell">0</ion-col>
+  </ion-row>
+
+  <ion-row class="data-row">
+    <ion-col class="data-cell">4</ion-col>
+    <ion-col class="data-cell">Febres Cordero</ion-col>
+    <ion-col class="data-cell">3</ion-col>
+    <ion-col class="data-cell">2</ion-col>
+    <ion-col class="data-cell">+8</ion-col>
+</ion-row>
+
+</ion-grid>
+<ion-button expand="block" fill="clear" shape="round">Ver más</ion-button>
+</ion-content>
+

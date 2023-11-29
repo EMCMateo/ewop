@@ -1,0 +1,243 @@
+
+
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+.tileion{
+    font-size: 1.2rem;
+}
+.img-inos{
+    height: 5rem;
+    width: 15rem;
+}
+.ps{
+    font-size: 0.7rem;
+}
+  .home{
+    background-color: #f8d6d6;
+  }
+  .ion-padding{ 
+  
+    background-color: #f8d6d6;
+  }
+  
+  ion-toolbar {
+    --opacity: 0.5;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  ion-fab-button {
+    --background: rgb(131, 208, 255);
+    --background-activated: rgb(51, 144, 161);
+    --background-hover: rgb(97, 175, 184);
+    --border-radius: 15px;
+    --box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+    --color: rgb(49, 49, 49);
+  }
+  
+  
+ .ion-padding{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+  .sports-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    width: 100%;
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    font-family: 'Sniglet', sans-serif;
+    color: #000000;
+  }
+  
+  .team {
+    font-size: 1rem;
+    text-align: start;
+    display: flex;
+  }
+  
+  .download-icon {
+    width: 16.8%;
+    height: 16.8%;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+  
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  
+  .rol{
+    position: absolute;
+    left: 9.8rem;
+    top: 1rem;
+  }
+  
+  .tournament-card {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+  }
+  
+  .tournament-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .tournament-card img {
+    width: 15rem;
+  }
+  
+  .noti{
+    position: absolute;
+    left: 22.5rem;
+    top:0.5rem;
+  }
+  
+  .cantNoti{
+    position: absolute;
+    left: 23.7rem;
+    top: 0.5rem;
+  }
+  
+  .uetslog {
+    position: absolute;
+    left: 35%;
+    top: 14rem;
+    width: 8rem;
+    height: 8rem; 
+    background-color: #afafaf ; 
+    border-radius:5rem; 
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 100px; 
+    margin-top: 2.7rem;
+  }
+  
+  .first{
+    width: 100%;
+    height: 3rem;
+  
+    z-index: 1;
+  }
+  
+  .one{
+    background-color: #b1dff5;
+  }
+  
+  .two{
+    background-color: rgb(146, 213, 245);
+    margin-top: 0rem;
+  }
+  
+  .three{
+    background-color: #71c2e781;
+  }
+  
+  h2 {
+    margin-top: 10px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .btn{
+    height: 25rem;
+    width: 23rem;
+    margin-top: 1.5rem;
+    margin-left: 5%;
+    padding: 0;
+    background-color: #ffffff;
+  }
+  
+  .btnprofile{
+    border-radius:100%;
+     width: 9rem;
+     height: 9rem;
+     background-color: #ffffff;
+  }
+  
+  .logo {
+    width: 8rem;
+    display: block;
+    margin: 0 auto 0rem;
+  
+  }
+  
+  
+  .text{
+    top: 10rem;
+    background-color: #2e54d300;
+    height: 15rem;
+    padding-top: 1rem;
+    border-radius: 1.5rem;
+    width: 20rem;
+    
+  }
+  
+  
+  .header2 {
+    position: relative;
+    background: url('https://cespedecuador.com/wp-content/uploads/2023/02/Obten-el-Mayor-Beneficio-de-tu-Cancha-de-Futbol-Instalando-Cesped-Sintetico-Deportivo.jpg') center/cover no-repeat;
+    height: auto;
+    color: #fff;
+  
+    text-align: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 19.2rem;
+    background: linear-gradient(to bottom, #ff583300, #3dc2ff7e);
+  
+  
+  }
+  
+  .background-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: -1; /* Coloca la imagen detrás de la superposición */
+  }
+  
+  .header2-content {
+    position: relative;
+    z-index: 1;
+    padding:  0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .header2-title {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  .header2-description {
+    font-size: 18px;
+  }

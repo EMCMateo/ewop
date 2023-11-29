@@ -1,0 +1,48 @@
+.its{
+display: flex;
+justify-content: space-between;   
+flex-wrap: wrap;
+}
+
+.download-icon {
+height: 3rem;
+width: 3rem;
+
+  }
+  .download-icon2 {
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    flex-wrap: wrap; 
+      }
+
+  .team {
+    font-size: 1rem;
+    display: flex;
+justify-content: space-between;   
+  }
+
+  .ps{
+font-size: 0.8rem;
+
+  }
+
+  ion-row {
+    border-bottom: 1px solid #ccc;
+}
+
+.header-row {
+    font-weight: bold;
+}
+
+.data-row:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.data-cell {
+    text-align: center;
+}
+
+.ion-content {
+    --ion-background-color: #fff; /* Cambiar el color de fondo según tus preferencias */
+}

@@ -1,0 +1,25 @@
+<ion-app>
+  <ion-menu menuId="main_menu" contentId="main">
+<ion-header>
+<ion-toolbar>
+<ion-title>Menu</ion-title>
+</ion-toolbar>
+</ion-header>
+
+  <ion-content>
+    <ion-list>
+      <ion-item [routerLink]="['/home']"> 
+        <ion-icon name="cube" slot="start"></ion-icon> <ion-label>Principal</ion-label>
+      </ion-item>
+      <ion-item [routerLink]="['/futbol1']">
+        <ion-icon name="football" slot="start"></ion-icon> <ion-label>Fútbol</ion-label>
+      </ion-item>
+      <ion-item [routerLink]="['/news']">
+        <ion-icon name="flame" slot="start"></ion-icon> <ion-label>Trending</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>
